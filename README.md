@@ -1,6 +1,7 @@
 # Arch Install
 
-This repository demonstrates steps to install Arch Linux from scratch...the hard way!
+> This repository demonstrates steps to install Arch Linux alongside with Ubuntu...the hard way!
+> First ensure that you have installed Ubuntu on your system, and then you can follow the steps below.
 
 ## Wi-Fi
 
@@ -50,3 +51,11 @@ Now use it on another machine to ssh in!
 ```bash
 ssh root@192.168.10.109
 ```
+
+## Partition
+
+**Obtain names of the blocks**  
+```bash
+lsblk
+```
+
