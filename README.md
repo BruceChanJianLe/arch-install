@@ -1,7 +1,10 @@
 # Arch Install
 
-> This repository demonstrates steps to install Arch Linux alongside with Ubuntu...the hard way!
-> First ensure that you have installed Ubuntu on your system, and then you can follow the steps below.
+> This repository demonstrates steps to install Arch Linux alongside with Ubuntu...the easy way!
+
+Prerequisite:
+- Installed Ubuntu
+- A free partition
 
 ## Wi-Fi
 
