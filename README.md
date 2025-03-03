@@ -70,4 +70,4 @@ cfdisk /dev/nvme0n1p5
 # Create the partition as the below image
 ```
 
-![img]()
+![img](./resources/create_partition.png)
