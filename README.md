@@ -130,3 +130,10 @@ Also, please select `Grub` for `Bootloader`.
 ```bash
 archinstall
 ```
+
+## Reference
+
+- https://github.com/dreamsofautonomy/arch-from-scratch
+- https://www.youtube.com/watch?v=YC7NMbl4goo
+- https://www.youtube.com/watch?v=eUhsFV0xIQc
+- https://www.youtube.com/watch?v=FxeriGuJKTM
