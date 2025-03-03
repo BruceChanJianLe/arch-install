@@ -48,5 +48,5 @@ passwd
 
 Now use it on another machine to ssh in!  
 ```bash
-ssh 
+ssh root@192.168.10.109
 ```
