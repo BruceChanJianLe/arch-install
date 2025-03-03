@@ -88,9 +88,44 @@ mkfs.fat -F32 /dev/nvme0n1p5
 mkfs.ext4 /dev/nvme0n1p8
 ```
 
+## Mounting
+
+**Mount root**  
+```bash
+mount /dev/nvme0n1p8 /mnt
+```
+
+**Mount boot**  
+```bash
+mount --mkdir /dev/nvme0n1p5 /mnt/boot
+```
+
+End result
+```
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0 824.9M  1 loop /run/archiso/airootfs
+sda           8:0    1  14.3G  0 disk
+├─sda1        8:1    1   999M  0 part
+└─sda2        8:2    1   180M  0 part
+nvme0n1     259:0    0 953.9G  0 disk
+├─nvme0n1p1 259:8    0   260M  0 part
+├─nvme0n1p2 259:9    0    16M  0 part
+├─nvme0n1p3 259:10   0 170.4G  0 part
+├─nvme0n1p4 259:11   0     2G  0 part
+├─nvme0n1p5 259:12   0     1G  0 part /mnt/boot
+├─nvme0n1p6 259:13   0  62.5G  0 part
+├─nvme0n1p7 259:14   0 132.8G  0 part
+└─nvme0n1p8 259:16   0 584.9G  0 part /mnt
+```
+
 ## Installation
 
 Use archinstall to install the rest!  
+
+ATTENTION!  
+Under `Disk configuration` -> `Partitioning` -> `Pre-mounted configuration`.
+For Root mount directory: `/mnt`  
+Also, please select `Grub` for `Bootloader`.
 
 ```bash
 archinstall
