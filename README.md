@@ -60,5 +60,14 @@ ssh root@192.168.10.109
 **Obtain names of the blocks**  
 ```bash
 lsblk
+# For my case, it is nvme0n1p5
 ```
 
+**Create partition**  
+```bash
+# We will need a partition for boot and another for our OS
+cfdisk /dev/nvme0n1p5
+# Create the partition as the below image
+```
+
+![img]()
