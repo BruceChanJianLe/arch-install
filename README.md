@@ -60,14 +60,38 @@ ssh root@192.168.10.109
 **Obtain names of the blocks**  
 ```bash
 lsblk
-# For my case, it is nvme0n1p5
+# For my case, it is nvme0n1
 ```
 
-**Create partition**  
+**Create partitions**  
 ```bash
 # We will need a partition for boot and another for our OS
-cfdisk /dev/nvme0n1p5
-# Create the partition as the below image
+cfdisk /dev/nvme0n1
+# I create these two partitions, ensure that the type is correct
+# Then write!
+# /dev/nvme0n1p5       1G EFI System
+# /dev/nvme0n1p8       584.9G Linux filesystem
 ```
 
 ![img](./resources/create_partition.png)
+
+
+## Filesystem
+
+**Format EFI Partition**  
+```bash
+mkfs.fat -F32 /dev/nvme0n1p5
+```
+
+**Format OS Partition**  
+```bash
+mkfs.ext4 /dev/nvme0n1p8
+```
+
+## Installation
+
+Use archinstall to install the rest!  
+
+```bash
+archinstall
+```
