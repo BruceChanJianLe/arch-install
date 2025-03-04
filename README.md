@@ -134,8 +134,9 @@ archinstall
 ## Update BIOS
 
 Finally, you are ready to use Arch Linux :D!
-However, due to the different grub version on Ubuntu and Arch.
-You will need to use the grub from Arch to search for Ubuntu 
+However, at the time of writing this note,
+Ubuntu and Arch are using different grub version.
+Hence, you will need to use the grub from Arch to search for Ubuntu 
 instead of doing it the other way round. So please update your
 BIOS to point to the correct grub, which is the EFI one.  
 
