@@ -131,6 +131,17 @@ Also, please select `Grub` for `Bootloader`.
 archinstall
 ```
 
+## Update BIOS
+
+Finally, you are ready to use Arch Linux :D!
+However, due to the different grub version on Ubuntu and Arch.
+You will need to use the grub from Arch to search for Ubuntu 
+instead of doing it the other way round. So please update your
+BIOS to point to the correct grub, which is the EFI one.  
+
+To discover your other OS with grub inside of arch, please read
+this [article](https://github.com/BruceChanJianLe/linux-grub).
+
 ## Reference
 
 - https://github.com/dreamsofautonomy/arch-from-scratch
