@@ -126,21 +126,21 @@ Use archinstall to install the rest!
 archinstall
 ```
 
-Step1:  
-**Disk configuration**  
+### Step1 (Disk configuration)  
 Under `Disk configuration` -> `Partitioning` -> `Pre-mounted configuration`.
 For Root mount directory: `/mnt`  
 
-Step2:  
-**Bootloader**  
+### Step2: (Bootloader)
 Please select `Grub` for `Bootloader`.
 
-Step3:  
-**Hostname**
+### Step3: (Hostname)
 Set to something unique, e.g. `dell`
 
-Step4:  
-**Root password**
+### Step4: (Root password)
+Set somthing you will remember!
+
+### Step5: (User account)
+Remember to save!
 
 ## Update BIOS
 
