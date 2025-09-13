@@ -122,14 +122,25 @@ nvme0n1     259:0    0 953.9G  0 disk
 
 Use archinstall to install the rest!  
 
-ATTENTION!  
-Under `Disk configuration` -> `Partitioning` -> `Pre-mounted configuration`.
-For Root mount directory: `/mnt`  
-Also, please select `Grub` for `Bootloader`.
-
 ```bash
 archinstall
 ```
+
+Step1:  
+**Disk configuration**  
+Under `Disk configuration` -> `Partitioning` -> `Pre-mounted configuration`.
+For Root mount directory: `/mnt`  
+
+Step2:  
+**Bootloader**  
+Please select `Grub` for `Bootloader`.
+
+Step3:  
+**Hostname**
+Set to something unique, e.g. `dell`
+
+Step4:  
+**Root password**
 
 ## Update BIOS
 
