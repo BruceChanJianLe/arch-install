@@ -120,6 +120,16 @@ nvme0n1     259:0    0 953.9G  0 disk
 
 ## Installation
 
+Prerequisite, ensure your timezone is correct
+```bash
+# Check timezone
+timedatectl
+# Find time zone
+timedatectl list-timezones | grep -i singapore
+# Set timezone
+timedatectl set-timezone Asia/Singapore
+```
+
 Use archinstall to install the rest!  
 
 ```bash
@@ -141,6 +151,22 @@ Set somthing you will remember!
 
 ### Step5: (User account)
 Remember to save!
+
+### Step6: (Profile)
+Select `Desktop` -> `gnome`
+Graphic card, select `proprietary` for nvidia 
+
+### Step7: (Audio)
+Select `pipewire`
+
+### Step8: (Kernel)
+Select `kernel` and `kernel-lts`, lts prolly will be better.
+
+### Step9: (Network configuration)
+Select `Use Network Manager...`
+
+### Step10: (Timezone)
+Select `Asia/Singapore` or your own timezone!
 
 ## Update BIOS
 
